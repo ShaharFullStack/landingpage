@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterStack | שחר מעוז - בנייה ופיתוח אתרים</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+        }
+        /* Style for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom gradient for footer and buttons */
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .gradient-bg-hover:hover {
+            background: linear-gradient(135deg, #1c347d 0%, #2575f5 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700">MasterStack</a>
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="#services" class="text-gray-600 hover:text-blue-600">שירותים</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600">תיק עבודות</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">יצירת קשר</a>
+            </div>
+            <a href="#contact" class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+                בואו נדבר
+            </a>
+             <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">שירותים</a>
+            <a href="#portfolio" class="block py-2 text-gray-600 hover:text-blue-600">תיק עבודות</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">יצירת קשר</a>
+            <a href="#contact" class="block mt-2 text-center bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+                בואו נדבר
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section 
+            class="relative text-white bg-cover bg-center" 
+            style="background-image: url('https://cdn.midjourney.com/d2a3e222-b1a1-4471-8015-335d2fca9764/0_0.png');">
+            
+            <!-- Overlay for text readability -->
+            <div class="absolute inset-0 bg-blue-900 opacity-75"></div>
+            
+            <div class="relative container mx-auto px-6 py-32 md:py-48 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">הופכים רעיונות למציאות דיגיטלית</h1>
+                <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto font-light text-blue-100">שמי שחר מעוז, ואני בונה אתרים מודרניים, מהירים ומותאמים אישית שיזניקו את העסק שלכם קדימה.</p>
+                <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 inline-block">
+                    ליצירת קשר וקבלת הצעת מחיר
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">השירותים שלי</h2>
+                    <p class="text-gray-600 mt-2 text-lg">כל מה שהעסק שלך צריך כדי להצליח בדיגיטל, במקום אחד.</p>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">בניית אתרים</h3>
+                        <p class="text-gray-600">פיתוח אתרים מותאמים אישית עם טכנולוגיות מתקדמות, תוך דגש על חווית משתמש ועיצוב מנצח.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3M5.636 5.636l-1.414-1.414m15.556 15.556l-1.414-1.414M18.364 5.636l1.414-1.414M5.636 18.364l1.414 1.414" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">תיקון אתרים</h3>
+                        <p class="text-gray-600">איתור וטיפול בתקלות, בעיות טכניות ופרצות אבטחה במהירות, יעילות ומקצועיות.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">שיפור ועיצוב אתרים</h3>
+                        <p class="text-gray-600">שדרוג אתרים קיימים למראה מודרני, רספונסיבי ופונקציונלי שמשפר את חווית המשתמש.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">אופטימיזציה ו-SEO</h3>
+                        <p class="text-gray-600">שיפור מהירות האתר, ביצועים וקידום במנועי חיפוש כדי להביא יותר תנועה אורגנית.</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">ניהול ותחזוקה</h3>
+                        <p class="text-gray-600">ניהול, תחזוקה שוטפת, גיבויים ועדכונים קבועים כדי לשמור על האתר שלכם מאובטח ועדכני.</p>
+                    </div>
+                     <!-- Service Card 6 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-5-6h10" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">אחסון אתרים</h3>
+                        <p class="text-gray-600">פתרונות אחסון מהירים, אמינים ומאובטחים שיתאימו לכל סוגי האתרים והתקציבים.</p>
+                    </div>
+                     <!-- Service Card 7 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">תמיכה טכנית</h3>
+                        <p class="text-gray-600">תמיכה מקצועית, ליווי אישי וזמינות גבוהה לכל שאלה, בעיה או התייעצות שתצטרכו.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">פרויקטים נבחרים</h2>
+                    <p class="text-gray-600 mt-2 text-lg">הצצה קטנה לעבודות שלי.</p>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://cdn.midjourney.com/25bb3547-3732-4f25-b869-18c37de1b797/0_0.png" alt="תמונת פרויקט של אתר אינבל צ'לו" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ef4444/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">ענבל מעוז - צ'לנית מקצועית</h3>
+                            <p class="text-gray-600 mb-4">אתר אמנית לצ'לנית מקצועית, עם גלריה, נגן מדיה ועיצוב אלגנטי.</p>
+                            <a href="https://inbalcello.web.app" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">צפייה בפרויקט &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://cdn.midjourney.com/39901fe2-fcc4-499e-8379-cbbbcff5ead3/0_1.png" alt="תמונת פרויקט של אתר ליאורה טרריום" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ef4444/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">טרה לי - ליאורה טרריום</h3>
+                            <p class="text-gray-600 mb-4">חנות אונליין וגלריה לטרריומים וסדנאות יצירה.</p>
+                            <a href="https://lioraterrarium.web.app" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">צפייה בפרויקט &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://cdn.midjourney.com/61d82656-138b-4193-923c-22b428d9a32b/0_0.png" alt="תמונת פרויקט של אתר ספז נדלן" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ef4444/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">ספז נדל"ן - חברת נדל"ן</h3>
+                            <p class="text-gray-600 mb-4">אתר תדמית לחברת נדל"ן, כולל הצגת נכסים, אזורים וטופס לידים מתקדם.</p>
+                            <a href="https://sfez-nadlan.web.app" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">צפייה בפרויקט &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">מוכנים להתחיל?</h2>
+                    <p class="text-gray-600 mt-2 text-lg">דברו איתי. אני זמין לכל שאלה, רעיון או פרויקט.</p>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-8 sm:p-12 rounded-xl shadow-2xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Contact Form -->
+                        <form action="#" method="POST">
+                            <div class="mb-5">
+                                <label for="name" class="block mb-2 font-medium text-gray-700">שם מלא</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-5">
+                                <label for="email" class="block mb-2 font-medium text-gray-700">אימייל</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-5">
+                                <label for="phone" class="block mb-2 font-medium text-gray-700">טלפון</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 font-medium text-gray-700">איך אוכל לעזור?</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full gradient-bg text-white font-bold py-3 px-6 rounded-lg text-lg gradient-bg-hover">
+                                שלח פנייה
+                            </button>
+                        </form>
+                        <!-- Contact Info -->
+                        <div class="flex flex-col justify-center space-y-6 text-lg">
+                             <h3 class="text-2xl font-bold text-center md:text-right">פרטי התקשרות</h3>
+                            <a href="tel:052-5347274" class="flex items-center space-x-4 space-x-reverse group">
+                                <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-blue-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                </div>
+                                <span class="text-gray-700 group-hover:text-blue-600">052-5347274</span>
+                            </a>
+                             <a href="mailto:admin@master-stack.com" class="flex items-center space-x-4 space-x-reverse group">
+                                <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-blue-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                </div>
+                                <span class="text-gray-700 group-hover:text-blue-600">admin@master-stack.com</span>
+                            </a>
+                             <a href="https://master-stack.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 space-x-reverse group">
+                                <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-blue-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 00-9-9m9 9a9 9 0 009-9" /></svg>
+                                </div>
+                                <span class="text-gray-700 group-hover:text-blue-600">master-stack.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 MasterStack | כל הזכויות שמורות לשחר מעוז</p>
+            <p class="text-sm text-blue-200 mt-2">בנייה ועיצוב: MasterStack</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                 mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
