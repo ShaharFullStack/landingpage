@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterStack | שחר מעוז </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        .hero-overlay {
+            background: linear-gradient(to top, rgba(17, 24, 39, 0.9) 0%, rgba(17, 24, 39, 0.6) 100%);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 60px;
+            height: 4px;
+            background-color: #3b82f6; /* Blue accent */
+            border-radius: 2px;
+        }
+        .rtl-icon-fix {
+             transform: scaleX(-1);
+        }
+        .cta-button {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl text-gray-900">MasterStack | שחר מעוז</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#services" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">השירותים שלי</a>
+                        <a href="#why-me" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">למה אני?</a>
+                        <a href="#projects" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">תיק עבודות</a>
+                        <a href="#contact" class="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium shadow-lg cta-button">בואו נדבר</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center text-white text-center overflow-hidden">
+        <div class="hero-overlay absolute top-0 left-0 w-full h-full"></div>
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="https://cdn.midjourney.com/video/6eb57000-bfce-4039-a3ac-d32b4037d54f/2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">הופכים רעיונות למציאות דיגיטלית שמביאה תוצאות.</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">אני בונה אתרים, אפליקציות וחוויות אינטראקטיביות שלא רק נראות מדהים, אלא גם ממירות גולשים ללקוחות ומשיגות את המטרות העסקיות שלכם.</p>
+            <a href="#contact" class="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-full text-lg font-bold shadow-2xl cta-button inline-block">כן, אני רוצה אתר שיעבוד בשבילי &larr;</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 lg:items-center">
+                    <div class="lg:col-span-1 flex justify-center lg:justify-start mb-8 lg:mb-0">
+                        <img class="rounded-full h-48 w-48 object-cover shadow-2xl ring-4 ring-blue-500 ring-offset-4 ring-offset-white" src="https://media.licdn.com/dms/image/v2/D4D03AQEiXPK8ZKUKVg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731425136017?e=1755734400&v=beta&t=RRuE_94e4A2mcUSFSEZFsE70gSdUIwmBGnP0SQD81ic" alt="תמונת פרופיל של שחר מעוז" onerror="this.onerror=null;this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Shahar+Maoz';">
+                    </div>
+                    <div class="lg:col-span-2">
+                        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">האתר שלכם הוא איש המכירות הכי טוב שלכם. <br class="hidden sm:block">הגיע הזמן שיתחיל לעבוד.</h2>
+                        <p class="text-lg text-gray-600 mb-4">אתר אינטרנט הוא לא רק כרטיס ביקור. הוא כלי שיווקי רב עוצמה. אני לא רק "בונה אתרים", אני יוצר מכונות משומנות לייצור לידים, חיזוק המותג ובניית קהילה. אני טכנולוג קריאייטיב שחי ונושם קוד, UX ועיצוב, והמטרה שלי היא לתרגם את החזון שלכם להצלחה דיגיטלית מדידה.</p>
+                        <p class="mt-4 text-xl font-bold text-blue-600">אני שחר מעוז, ואני כאן כדי לבנות לכם נוכחות דיגיטלית שתשאיר אבק למתחרים.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="section-title text-3xl font-extrabold text-gray-900 sm:text-4xl">איך אני עוזר לעסק שלכם לצמוח?</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">כל שירות מותאם אישית למטרה אחת: להביא לכם תוצאות.</p>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 text-center">
+                        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">אתרים ודפי נחיתה שממירים</h3>
+                        <p class="mt-2 text-base text-gray-600">פיתוח אתרים מרהיבים ומהירים עם חווית משתמש ממכרת, שהופכים גולשים מזדמנים ללקוחות משלמים.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 text-center">
+                        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 1-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 1 3.09-3.09L12 5.25l2.846.813a4.5 4.5 0 0 1 3.09 3.09L21.75 12l-2.846.813a4.5 4.5 0 0 1-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18.25 2.25l.518 1.036a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">חוויות דיגיטליות ומוצרי Web</h3>
+                        <p class="mt-2 text-base text-gray-600">הפיכת רעיונות מורכבים לאפליקציות ווב, כלים חינוכיים ומוצרים אינטראקטיביים שמשתמשים לא ירצו לעזוב.</p>
+                    </div>
+                     <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 text-center">
+                        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-blue-100 text-blue-600 mb-4">
+                             <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 16v-2m0-8v-2m0 4h.01M6 12H4m16 0h-2m-8 0h.01M12 18h.01M18 12h.01M6 12h.01M18 6l-2-2m-12 12l-2-2" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">אוטומציה שתחסוך לכם כסף</h3>
+                        <p class="mt-2 text-base text-gray-600">זיהוי ומיכון תהליכים ידניים בעסק שלכם כדי שתוכלו להתמקד במה שחשוב באמת - צמיחה.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Me Section -->
+        <section id="why-me" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="section-title text-3xl font-extrabold text-gray-900 sm:text-4xl">השותף הטכנולוגי שהעסק שלך צריך</h2>
+                </div>
+                <div class="mt-12 space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-gray-100 mx-auto">
+                            <svg class="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m-3.935 16.635L12 12m0 0l4.065-4.635" /></svg>
+                        </div>
+                        <h4 class="text-lg mt-4 leading-6 font-bold text-gray-900">ראייה 360°</h4>
+                        <p class="mt-2 text-base text-gray-600">אני לא רק מקודד. אני איש מוצר, יוצר וטכנולוג. אני מבין את המטרות העסקיות שלך ומתרגם אותן לפתרון טכנולוגי מדויק.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-gray-100 mx-auto">
+                            <svg class="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V4a2 2 0 012-2h8a2 2 0 012 2v4z" /></svg>
+                        </div>
+                        <h4 class="text-lg mt-4 leading-6 font-bold text-gray-900">תקשורת בגובה העיניים</h4>
+                        <p class="mt-2 text-base text-gray-600">אני מאמין בשקיפות מלאה ודיאלוג פתוח. נקשיב לצרכים שלך לפני שכותבים שורת קוד אחת, ונעדכן אותך בכל שלב בדרך.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-gray-100 mx-auto">
+                            <svg class="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h4 class="text-lg mt-4 leading-6 font-bold text-gray-900">תוצאות, לא הבטחות</h4>
+                        <p class="mt-2 text-base text-gray-600">ההצלחה שלך היא ההצלחה שלי. אני מחויב לספק מוצר סופי שעומד בסטנדרטים הגבוהים ביותר ועוזר לך להשיג את היעדים שלך.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="section-title text-3xl font-extrabold text-gray-900 sm:text-4xl">העבודות מדברות בעד עצמן</h2>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                        <img class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500" src="https://placehold.co/600x400/3b82f6/ffffff?text=HandSynth" alt="תמונה של פרויקט HandSynth">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2"> HandSynth – כלי נגינה בתנועה</h3>
+                            <p class="text-gray-600">כלי נגינה חדשני המופעל באמצעות תנועות ידיים באוויר, תוך שימוש בטכנולוגיות Web.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                        <img class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500" src="https://placehold.co/600x400/10b981/ffffff?text=BalloonGame" alt="תמונה של פרויקט BalloonGame">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2"> BalloonGame </h3>
+                            <p class="text-gray-600">משחק דפדפן, דמויות מעוצבות, מפת משחק, בניית שלבים MasterStack.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                        <img class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500" src="https://placehold.co/600x400/8b5cf6/ffffff?text=3D+Simulator" alt="תמונה של סימולטור תלת ממדי">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">3D Flight Simulator – סימולטור חינוכי</h3>
+                            <p class="text-gray-600">סימולטור טיסה תלת-ממדי שפותח ככלי עזר חינוכי להבנת עקרונות תעופה.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="py-20 bg-blue-600 text-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <svg class="w-16 h-16 mx-auto mb-4 text-blue-300 rtl-icon-fix" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                </svg>
+                <blockquote class="text-2xl font-medium">
+                    <p>"לא עוד בונה אתרים. שחר הוא שותף אמיתי לדרך. הוא חושב איתך, מייצר איתך, ומביא פתרונות יצירתיים שלא היינו חולמים עליהם לבד."</p>
+                </blockquote>
+                <cite class="block mt-4 font-bold not-italic">— סטודיו מוזיקלי, תל אביב</cite>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-gray-50 rounded-2xl shadow-2xl p-10 -mt-32 relative z-10">
+                 <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">מוכנים להזניק את הנוכחות הדיגיטלית שלכם?</h2>
+                 <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">השאירו פרטים או צרו קשר, ונקבע שיחת ייעוץ קצרה (ובחינם!) כדי להבין איך אני יכול לעזור לכם להשיג את המטרות שלכם.</p>
+                 <div class="mt-8 space-y-4 md:space-y-0 md:flex md:justify-center md:space-x-6 md:space-x-reverse">
+                    <a href="mailto:rakloze@gmail.com" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 shadow-lg cta-button">
+                        נתחיל במייל
+                    </a>
+                     <a href="tel:052-534-7274" class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 shadow-lg cta-button">
+                        נדבר בטלפון
+                    </a>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-20">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 MasterStack | שחר מעוז. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
